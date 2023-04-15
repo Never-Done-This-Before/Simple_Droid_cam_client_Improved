@@ -90,6 +90,10 @@ namespace SimpleDroidCamClient {
       string command7 = "sleep 1";
 
       string command8 = "pkexec  modprobe v4l2loopback devices=" + this.entry_newdevices.get_text();
+      
+     
+      
+      
 
         try {
         Process.spawn_command_line_sync ( command6, out standard_outputs, null, null );
@@ -112,6 +116,12 @@ namespace SimpleDroidCamClient {
         stderr.printf ( "There was an error spawining the process. Details: %s", spawnCaughtError.message );
       }
 
+      try {
+        Process.spawn_command_line_sync ( command7, out standard_outputs, null, null );
+        standard_outputs = standard_outputs.slice ( 0, standard_outputs.length-1 );
+      } catch ( SpawnError spawnCaughtError ) {
+        stderr.printf ( "There was an error spawining the process. Details: %s", spawnCaughtError.message );
+      }
 
 
 
@@ -138,14 +148,28 @@ namespace SimpleDroidCamClient {
     }
 
     private void load_module () {
+      string standard_outputs = "";
       string command = "pkexec modprobe v4l2loopback exclusive_caps=1 video_nr=" + this.entry_v4ld.get_text() + " " +  "card_label="+ SimpleDroidCamClient.ApplicationWindow.device_name + "";
+      string command1 = "sleep 1";
 
       try {
         Process.spawn_command_line_sync ( command, null, null, null );
       } catch ( SpawnError spawnCaughtError ) {
         stderr.printf ( "There was an error spawining the process. Details: %s", spawnCaughtError.message );
       }
+      
+      
+      try {
+        Process.spawn_command_line_sync ( command1, out standard_outputs, null, null );
+        standard_outputs = standard_outputs.slice ( 0, standard_outputs.length-1 );
+      } catch ( SpawnError spawnCaughtError ) {
+        stderr.printf ( "There was an error spawining the process. Details: %s", spawnCaughtError.message );
+      }
+      
+      
     }
+    
+   
 
     private void connect_camera () {
       string socket = this.entry_ip.get_text () + ":" + this.entry_port.get_text ();
