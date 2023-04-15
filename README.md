@@ -15,6 +15,9 @@ Things are a bit funky and it may take more than one try to connect to one devic
 
 The more than one instances can also be a bit funky, but it works. I have created and run more than one instance
 
+I also added sleep commands because i found that often it will not connect on the first try. Myabe because of concurrency issues or 
+module not being fully loaded before it tries to use it
+
 As usual this software comes with no warranty of any kind and I am not responsible for any damages
 
 Building and Installing:
