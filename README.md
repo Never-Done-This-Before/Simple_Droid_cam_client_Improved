@@ -17,4 +17,17 @@ The more than one instances can also be a bit funky, but it works. I have create
 
 As usual this software comes with no warranty of any kind and I am not responsible for any damages
 
+Building and Installing:
 
+  I am not sure about other distros so this is only for arch right now
+  
+   arch-meson . build --wrap-mode=nofallback
+   
+   ninja -C build
+
+   ninja -C build install
+
+
+ 
+P.S.   I am not sure what else you will need to build this. a good work around is to install the one from AUR which will pull in the dependencies,
+        then build and install this one to replace that one.
