@@ -15,7 +15,7 @@ Things are a bit funky and it may take more than one try to connect to one devic
 
 The more than one instances can also be a bit funky, but it works. I have created and run more than one instance
 
-I also added sleep commands because i found that often it will not connect on the first try. Myabe because of concurrency issues or 
+I also added sleep commands because I found that often it will not connect on the first try. Maybe because of concurrency issues or 
 module not being fully loaded before it tries to use it
 
 As usual this software comes with no warranty of any kind and I am not responsible for any damages
@@ -30,12 +30,11 @@ Building and Installing:
 
    ninja -C build install
 
-
+  (After building, it might complain that a button is never used...I don't yet know why it does that, because the button is used and works as intended)
  
-P.S.   I am not sure what else you will need to build this. a good work around is to install the one from AUR which will pull in the dependencies,
-        then build and install this one to replace that one.
+P.S.   I am not sure what else you will need to build and install this. So a good work around is to install the one from AUR which will pull in the dependencies,then build and install this one to replace that one.
         
-I will try to add this to the AUR, or someone else can because I am not sure how to do that yet.
+I will try to add this to the AUR... or someone else can, because I am not sure how to do that yet.
 
 
 ![Alt text](https://github.com/Never-Done-This-Before/Simple_Droid_cam_client_Improved/blob/main/Screenshot_droidcam_multiple.png "Screenshot")
