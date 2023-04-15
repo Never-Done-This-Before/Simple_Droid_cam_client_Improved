@@ -3,6 +3,7 @@ Forked droidcam client from Fernando Fernández at Gitlab
 
 I forked this from Fernando Fernández at Gitlab and made some improvements
 This is still a work in progress and I dont know much about what I am doing :)
+I will try to get in touch with the original creator and let him know of my fork
 
 The improvements are that you can connect to a particular V4l2 device whereas before it was hard coded to /dev/video4....or was it 3?
 
