@@ -38,4 +38,9 @@ P.S.   I am not sure what else you will need to build and install this. So a goo
 I will try to add this to the AUR... or someone else can, because I am not sure how to do that yet.
 
 
+I hope it's clear that for the second or third or more instances, you only need to click the "Connect" button with a different number in the V4l_Device input box...As shown in the screenshot.
+
+
 ![Alt text](https://github.com/Never-Done-This-Before/Simple_Droid_cam_client_Improved/blob/main/Screenshot_droidcam_multiple.png "Screenshot")
+
+
