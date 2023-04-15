@@ -33,3 +33,6 @@ P.S.   I am not sure what else you will need to build this. a good work around i
         then build and install this one to replace that one.
         
 I will try to add this to the AUR, or someone else can because I am not sure how to do that yet.
+
+
+![Alt text](https://github.com/Never-Done-This-Before/Simple_Droid_cam_client_Improved/blob/main/Screenshot_droidcam_multiple.png "Screenshot")
