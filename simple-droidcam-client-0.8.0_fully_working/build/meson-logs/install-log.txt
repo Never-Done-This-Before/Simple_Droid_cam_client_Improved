@@ -1,9 +1,0 @@
-# List of files installed by Meson
-# Does not contain files installed by custom scripts.
-/usr/share/applications/ar.com.softwareperonista.SimpleDroidCamClient.desktop
-/usr/share/appdata/ar.com.softwareperonista.SimpleDroidCamClient.appdata.xml
-/usr/bin/simple_droidcam_client
-/usr/share/locale/es/LC_MESSAGES/simple_droidcam_client.mo
-/usr/share/glib-2.0/schemas/ar.com.softwareperonista.SimpleDroidCamClient.gschema.xml
-/usr/share/icons/hicolor/scalable/apps/ar.com.softwareperonista.SimpleDroidCamClient.svg
-/usr/share/icons/hicolor/symbolic/apps/ar.com.softwareperonista.SimpleDroidCamClient-symbolic.svg
