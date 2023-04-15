@@ -29,6 +29,8 @@ Building and Installing:
    ninja -C build
 
    ninja -C build install
+   
+   (After building, it might say that a button is never used...I dont yet know why it says that but the button is definitely used and works)
 
 
  
