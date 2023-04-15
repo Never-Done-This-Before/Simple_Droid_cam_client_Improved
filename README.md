@@ -31,3 +31,5 @@ Building and Installing:
  
 P.S.   I am not sure what else you will need to build this. a good work around is to install the one from AUR which will pull in the dependencies,
         then build and install this one to replace that one.
+        
+I will try to add this to the AUR, or someone else can because I am not sure how to do that yet.
