@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/ar/com/softwareperonista/simple_droidcam_client/ui">
+    <file>simple_droidcam_client_application_window.ui</file>
+    <file>simple_droidcam_client_main_menu.ui</file>
+  </gresource>
+</gresources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="simple_droidcam_client">
+  <schema id="ar.com.softwareperonista.SimpleDroidCamClient" path="/ar/com/softwareperonista/simple_droidcam_client/">
+    <key name="newdevices" type="s">
+      <default>"6"</default>
+      <summary>New V4l2 Devices to Create</summary>
+      <description>The number of new v4l2 devices that will be </description>
+    </key>
+    <key name="v4ld" type="s">
+      <default>"6"</default>
+      <summary>Droidcam V4l2 Device Number</summary>
+      <description>The device number of /dev/videoX that will be connected to</description>
+    </key>
+    <key name="ip" type="s">
+      <default>""</default>
+      <summary>Droidcam device's IP</summary>
+      <description>The IP of the Droidcam device</description>
+    </key>
+    <key name="port" type="s">
+      <default>"4747"</default>
+      <summary>Droidcam device's port</summary>
+      <description>The port of the Droidcam device</description>
+    </key>
+    <key name="resolution" type="s">
+      <default>"640x480"</default>
+      <summary>The video resolution</summary>
+      <description>The desired video resolution</description>
+    </key>
+    <key name="vertical-flip" type="b">
+      <default>false</default>
+      <summary>The vertical orientation</summary>
+      <description>If true flip vertically the video</description>
+    </key>
+  </schema>
+</schemalist>

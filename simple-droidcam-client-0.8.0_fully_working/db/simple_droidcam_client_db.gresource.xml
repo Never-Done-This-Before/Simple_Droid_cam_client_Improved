@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/ar/com/softwareperonista/simple_droidcam_client/db/">
+    <file compressed="true">simple_droidcam_client_base_de_datos_definicion.sql</file>
+  </gresource>
+</gresources>

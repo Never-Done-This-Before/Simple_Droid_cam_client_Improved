@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ "$(whereis -b uncrustify)" != "uncrustify:" ]
+then
+  if [ "x$(git diff --cached --name-only --diff-filter=ACM | grep '.vala')" != "x" ]
+  then
+    uncrustify -c codestyle/uncrustify.cfg --replace --no-backup $(git diff --cached --name-only --diff-filter=ACM | grep ".vala")
+    git add $(git diff --cached --name-only --diff-filter=ACM | grep ".vala")
+  fi
+else
+  echo "Commit Aborted: Install uncrustify to check code style"
+  exit 1
+fi
+
+if [ "$(whereis -b xmllint)" != "xmllint:" ]
+then
+  for FILE in $(git diff --cached --name-only --diff-filter=ACM | grep -v 'meson.build' | grep -e '.ui' -e '.xml')
+  do
+    xmllint --format $FILE -o $FILE
+    git add $FILE
+  done
+else
+  echo "Commit Aborted: Install xmllint to check code style"
+  exit 1
+fi

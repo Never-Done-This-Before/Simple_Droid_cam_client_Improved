@@ -1,0 +1,22 @@
+# Spanish translations for simple_droidcam_client package.
+# Copyright (C) 2018 THE simple_droidcam_client'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the simple_droidcam_client package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: simple_droidcam_client\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-20 16:20-0300\n"
+"PO-Revision-Date: 2018-06-20 16:20-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/ar.com.softwareperonista.SimpleDroidCamClient.desktop.in:3
+msgid "simple_droidcam_client"
+msgstr ""

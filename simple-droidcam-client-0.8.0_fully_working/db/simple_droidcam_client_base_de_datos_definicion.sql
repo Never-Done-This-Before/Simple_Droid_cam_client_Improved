@@ -1,0 +1,7 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE db (
+	version INTEGER NOT NULL PRIMARY KEY
+);
+COMMIT;
+PRAGMA foreign_keys=ON;

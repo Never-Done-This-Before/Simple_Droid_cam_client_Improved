@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="SimpleDroidCamClientApplicationWindow" parent="GtkApplicationWindow">
+    <property name="can-focus">true</property>
+    <property name="halign">start</property>
+    <property name="resizable">true</property>
+    <property name="valign">start</property>
+    <child>
+                        <object class="GtkGrid">
+                          <property name="can-focus">true</property>
+                          <property name="margin-start">20</property>
+                          <property name="margin-end">20</property>
+                          <property name="margin-top">20</property>
+                          <property name="margin-bottom">20</property>
+                          <property name="row-spacing">20</property>
+                          <property name="column-spacing">20</property>
+
+
+                          <child>
+                            <object class="GtkLabel">
+                              <property name="can-focus">false</property>
+                              <property name="halign">start</property>
+                              <property name="label" translatable="yes">V4l_Device number to conect to </property>
+                              <layout>
+                                <property name="column">0</property>
+                                <property name="row">0</property>
+                              </layout>
+                            </object>
+                          </child>
+
+
+
+                          <child>
+                            <object class="GtkEntry" id="entry_v4ld">
+                              <property name="text" translatable="yes">6</property>
+                              <layout>
+                                <property name="column">1</property>
+                                <property name="row">0</property>
+                              </layout>
+                            </object>
+                          </child>
+
+
+
+
+                          <child>
+                            <object class="GtkButton" id="button_connect_camera">
+                              <property name="label" translatable="yes">Connect</property>
+                              <property name="receives-default">true</property>
+                              <property name="valign">center</property>
+                              <property name="hexpand">true</property>
+                              <property name="width_request">111</property>
+                              <signal name="clicked" handler="button_connect_camera_clicked" swapped="no"/>
+                              <layout>
+                                <property name="column">2</property>
+                                <property name="row">0</property>
+                              </layout>
+                            </object>
+                          </child>
+
+
+
+                          <child>
+                            <object class="GtkImage" id="image_state">
+                              <property name="can-focus">false</property>
+                              <property name="icon-name">window-close-symbolic</property>
+                             
+                              <layout>
+                                <property name="column">3</property>
+                                <property name="row">0</property>
+                              </layout>
+                            </object>
+                          </child>
+                          <child>
+                            <object class="GtkSpinner" id="spinner_connecting">
+                              
+                              <property name="visible">false</property>
+                              <property name="can-focus">false</property>
+                              <layout>
+                                <property name="column">3</property>
+                                <property name="row">0</property>
+                              </layout>
+                            </object>
+                          </child>
+                       
+
+                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           
+
+
+                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                               
+
+
+
+                                                                                                                  <property name="can-focus">true</property>
+                                                                                                                  <property name="row-spacing">20</property>
+                                                                                                                  <property name="column-spacing">15</property>
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkLabel">
+                                                                                                                      <property name="can-focus">false</property>
+                                                                                                                      <property name="halign">start</property>
+                                                                                                                      <property name="label" translatable="yes">IP</property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">0</property>
+                                                                                                                        <property name="row">1</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkLabel">
+                                                                                                                      <property name="can-focus">false</property>
+                                                                                                                      <property name="halign">start</property>
+                                                                                                                      <property name="label" translatable="yes">Port</property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">0</property>
+                                                                                                                        <property name="row">2</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkEntry" id="entry_ip">
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">1</property>
+                                                                                                                        <property name="row">1</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkEntry" id="entry_port">
+                                                                                                                      <property name="text" translatable="yes">4747</property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">1</property>
+                                                                                                                        <property name="row">2</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkLabel">
+                                                                                                                      <property name="can-focus">false</property>
+                                                                                                                      <property name="halign">start</property>
+                                                                                                                      <property name="label" translatable="yes">Resolution</property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">0</property>
+                                                                                                                        <property name="row">3</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkEntry" id="entry_resolution">
+                                                                                                                      <property name="text" translatable="yes">640x480</property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">1</property>
+                                                                                                                        <property name="row">3</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkLabel">
+                                                                                                                      <property name="can-focus">false</property>
+                                                                                                                      <property name="halign">start</property>
+                                                                                                                      <property name="label" translatable="yes">Vertical Flip</property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">0</property>
+                                                                                                                        <property name="row">4</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkSwitch" id="switch_vertical_flip">
+                                                                                                                      <property name="halign">end</property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">1</property>
+                                                                                                                        <property name="row">4</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkLabel">
+                                                                                                                      <property name="can-focus">false</property>
+                                                                                                                      <property name="halign">start</property>
+                                                                                                                      <property name="label" translatable="yes">Delete previous and create</property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">0</property>
+                                                                                                                        <property name="row">5</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+                          
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkLabel">
+                                                                                                                      <property name="can-focus">false</property>
+                                                                                                                      <property name="halign">start</property>
+                                                                                                                      <property name="label" translatable="yes">new /dev/video#  devices </property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">0</property>
+                                                                                                                        <property name="row">6</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+
+
+
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkEntry" id="entry_newdevices">
+                                                                                                                      <property name="text" translatable="yes">6</property>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">1</property>
+                                                                                                                        <property name="row">5</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+                                                                                                                  <child>
+                                                                                                                    <object class="GtkButton" id="button_new_devices">
+                                                                                                                      <property name="label" translatable="yes">Delete and Create</property>
+                                                                                                                      <property name="receives-default">true</property>
+                                                                                                                      <property name="valign">center</property>
+                                                                                                                      <property name="hexpand">true</property>
+                                                                                                                      <property name="width_request">111</property>
+                                                                                                                      <signal name="clicked" handler="button_new_devices_clicked" swapped="no"/>
+                                                                                                                      <layout>
+                                                                                                                        <property name="column">2</property>
+                                                                                                                        <property name="row">5</property>
+                                                                                                                      </layout>
+                                                                                                                    </object>
+                                                                                                                  </child>
+
+
+
+
+
+
+                                                                                      </object>                            
+
+
+
+
+                                            </child>
+
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header_bar">
+        <property name="can-focus">false</property>
+        <property name="title_widget">
+          <object class="GtkLabel">
+            <property name="label">Simple Droidcam Client</property>
+          </object>
+        </property>
+        <child type="end">
+          <object class="GtkMenuButton" id="menubutton">
+            <property name="icon-name">open-menu-symbolic</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

@@ -1,0 +1,6 @@
+data/ar.com.softwareperonista.SimpleDroidCamClient.desktop.in
+data/ar.com.softwareperonista.SimpleDroidCamClient.appdata.xml.in
+data/ar.com.softwareperonista.SimpleDroidCamClient.gschema.xml
+src/simple_droidcam_client_main.vala
+src/simple_droidcam_client_application_window.vala
+ui/simple_droidcam_client_application_window.ui
