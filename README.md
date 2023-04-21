@@ -32,8 +32,13 @@ Building and Installing:
    ninja -C build install
 
   (After building, it might complain that a button is never used...I don't yet know why it does that, because the button is used and works as intended)
+  
   (After install if you get an error saying a key doesn't exist, then you might need the gsettings-desktop-schemas package. Install it and reboot.)
+  
   (Sometimes it's not the client's fault. I have noticed that sometimes you need to close and reopen the app on your phone as well)
+  
+  (Lastly, try to do the build and install in bash, I i am not sure what it was; but I think it was fish giving me problems with building and installing)
+  
  
 P.S.   I am not sure what else you will need to build and install this. So a good work around is to install the one from AUR which will pull in the dependencies,then build and install this one to replace that one.
         
