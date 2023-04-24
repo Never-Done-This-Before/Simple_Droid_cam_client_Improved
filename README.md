@@ -25,6 +25,8 @@ Building and Installing:
 
   I am not sure about other distros so this is only for arch right now
   
+  After cloning, cd into the subdirectory (the fully_working directory)
+  
    arch-meson . build --wrap-mode=nofallback
    
    ninja -C build
